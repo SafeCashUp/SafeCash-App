@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const estiloQuestion = StyleSheet.create({
     container: {
         height: '100%',
-        backgroundColor: 'black',
+        backgroundColor: '#080808',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column'
@@ -18,8 +18,8 @@ const estiloQuestion = StyleSheet.create({
         marginTop: 10
     },
     inputs: {
-        width: 170,
-        height: 25,
+        width: 155,
+        height: 30,
         marginTop: 10,
         paddingLeft: 5,
         paddingRight: 5,
@@ -27,7 +27,7 @@ const estiloQuestion = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'white',
         color: '#434343',
-        fontSize: 15
+        fontSize: 17
     },
     imgSeta: {
         width: 55,
