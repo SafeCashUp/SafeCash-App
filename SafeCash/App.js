@@ -32,9 +32,10 @@ function rotasDrawer() {
 
 export default function App() {
   return (
+
     <NavigationContainer>
       <StatusBar barStyle="light-content" backgroundColor="#FF8000" />
-      <Stack.Navigator> 
+      <Stack.Navigator initialRouteName="Question1"> 
         <Stack.Screen
             name="Question1"
             component={Question1}

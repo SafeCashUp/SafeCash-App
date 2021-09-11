@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity} from 'react-native';
 import estiloInicial from './estiloInicial';
 
-export default function() {
+export default function({ route }) {
     return (
         <View style={estiloInicial.container}>
                 <View style={estiloInicial.header}>
                     <View style={estiloInicial.cabecalho}>
                         <View style={estiloInicial.logoHello}>
                             <Image source={require('../../../assets/logo.png')} style={estiloInicial.logoHeader}/>
-                            <Text style={estiloInicial.Hello}>Olá {"\n"}</Text>
+                            <Text style={estiloInicial.Hello}>Olá {"\n"}Vitudomingues</Text>
                         </View>
                         <TouchableOpacity activeOpacity={0.5}>
                             <Image style={estiloInicial.visible} source={require('../../../assets/visibility.png')}/>
@@ -17,8 +17,37 @@ export default function() {
                     </View>
                 </View>
                 <View style={estiloInicial.carteira}>
-                    
+                    <Text style={estiloInicial.textTitle}>Resumo</Text>
+                    <View style={estiloInicial.saldo}>
+                        <Text style={estiloInicial.textSaldo}>Saldo geral</Text>
+                        <Text style={estiloInicial.valorSaldo}>R$ 456,46</Text>
+                    </View>
+
+                    <View style={estiloInicial.linha} />
+
+                    <View style={estiloInicial.resumoMensal}>
+                        <View style={estiloInicial.mensalReceita}>
+                            <Text style={estiloInicial.textResumo}>Receita Mensal</Text>
+                            <Text style={estiloInicial.valor}>R$ 150,00</Text>
+                        </View>
+                        <View style={estiloInicial.mensalDespesa}>
+                            <Text style={estiloInicial.textResumo}>Despesa Mensal</Text>
+                            <Text style={estiloInicial.valor}>R$ 36,50</Text>                        
+                        </View>
+                    </View>
+                    <View style={estiloInicial.linha} />
+
+                    <View style={estiloInicial.positionButton}>
+                        <TouchableOpacity style={estiloInicial.botaoVerMais} activeOpacity={0.5}>
+                            <Text style={estiloInicial.textVerMais}>Ver Mais</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
+                
+                    <TouchableOpacity style={estiloInicial.positionAdicionar} activeOpacity={0.5}>
+                        <Image style={estiloInicial.botaoAdicionar} source={require('../../../assets/add.png')} />
+                    </TouchableOpacity>
+                    
         </View>
     );
 }
