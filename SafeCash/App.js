@@ -9,13 +9,14 @@ import Question1 from './src/views/Questions/Question1';
 import Question2 from './src/views/Questions/Question2';
 import Question3 from './src/views/Questions/Question3';
 import Inicial from './src/views/Inicial/Inicial';
+import Sobre from './src/views/Sobre/Sobre';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
 function rotasDrawer() {
   return (
-    <Drawer.Navigator initialRouteName="Inicial">
+    <Drawer.Navigator initialRouteName="Sobre">
       <Drawer.Screen
           name="Inicial"
           component={Inicial}
@@ -23,6 +24,15 @@ function rotasDrawer() {
             { headerStyle: { backgroundColor: '#151515'},
               headerTintColor: 'gainsboro',
               title: 'Home'
+            }
+          }
+      />
+      <Drawer.Screen
+          name="Sobre"
+          component={Sobre}
+          options={
+            { headerStyle: { backgroundColor: '#151515'},
+              headerTintColor: 'gainsboro'
             }
           }
       />
@@ -35,7 +45,7 @@ export default function App() {
 
     <NavigationContainer>
       <StatusBar barStyle="light-content" backgroundColor="#FF8000" />
-      <Stack.Navigator initialRouteName="Question1"> 
+      <Stack.Navigator initialRouteName="Inicial"> 
         <Stack.Screen
             name="Question1"
             component={Question1}
