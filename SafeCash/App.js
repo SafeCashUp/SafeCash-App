@@ -16,7 +16,7 @@ const Drawer = createDrawerNavigator();
 
 function rotasDrawer() {
   return (
-    <Drawer.Navigator initialRouteName="Sobre">
+    <Drawer.Navigator initialRouteName="Inicial">
       <Drawer.Screen
           name="Inicial"
           component={Inicial}
@@ -45,7 +45,7 @@ export default function App() {
 
     <NavigationContainer>
       <StatusBar barStyle="light-content" backgroundColor="#FF8000" />
-      <Stack.Navigator initialRouteName="Inicial"> 
+      <Stack.Navigator initialRouteName="Question1"> 
         <Stack.Screen
             name="Question1"
             component={Question1}

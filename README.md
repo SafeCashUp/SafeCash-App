@@ -6,7 +6,7 @@
   
 # OBJETIVO
 
-Permitir um planejamento financeiro de pessoas que tem o consumo desenfreado,mais comumente em jovens, através de um App, definindo metas e objetivos a curto e longo prazo, organizar o seu dinheiro destinando uma porcentagem para cada objetivo como gastos fixos, gastos pessoais e gastos para prioridades financeiras, proporcionando estabilidade financeira para alcançar seus sonhos e a capacidade de superar imprevistos.
+Permitir um planejamento financeiro de pessoas que tem o consumo desenfreado, mais comumente em jovens, através de um App, definindo metas e objetivos a curto e longo prazo, organizar o seu dinheiro destinando uma porcentagem para cada objetivo como gastos fixos, gastos pessoais e gastos para prioridades financeiras, proporcionando estabilidade financeira para alcançar seus sonhos e a capacidade de superar imprevistos.
 
 ## Execusão
 
