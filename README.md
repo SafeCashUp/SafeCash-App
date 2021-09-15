@@ -1,8 +1,8 @@
-<div style="text-align:center"><img src="./Imgs-README/TextoLogo.png"></div>
+<p align="center"><img src="./Imgs-README/TextoLogo.png"></p>
   
 ---
   
-<div style="text-align:center"><img src="./Imgs-README/login.png"> <img src="./Imgs-README/home.png"></div>
+<p align="center"><img src="./Imgs-README/login.png"> <img src="./Imgs-README/home.png"></p>
   
 # OBJETIVO
 
