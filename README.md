@@ -29,4 +29,4 @@ Para executar a aplicação pelo aplicativo expo no seu smartphone, execute o se
 yarn start --tunnel
 ```
   
-Após isso é so escanear com o expo o QR Code mostrado no terminal.
+Após isso é só escanear com o expo o QR Code mostrado no terminal.
