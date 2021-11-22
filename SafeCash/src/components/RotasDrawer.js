@@ -9,7 +9,7 @@ const RotasDrawer = () => {
     return (
         <Drawer.Navigator initialRouteName="Inicial">
           <Drawer.Screen
-              name="Inicial"
+              name="InicialIn"
               component={Inicial}
               options={
                 { headerStyle: { backgroundColor: '#151515'},
