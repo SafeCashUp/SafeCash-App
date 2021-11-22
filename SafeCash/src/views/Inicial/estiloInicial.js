@@ -1,10 +1,13 @@
 import { StyleSheet } from "react-native";
+import { vw } from 'react-native-expo-viewport-units';
 
 const estiloInicial = StyleSheet.create({
     container: {
-        height: '100%',
-        width: '100%',
-        alignItems: 'center',
+        flex: 1
+    },
+    containerScrollView: {
+        flex: 1,
+        flexDirection: 'column',
         backgroundColor: 'gainsboro'
     },
     header: {
@@ -36,12 +39,20 @@ const estiloInicial = StyleSheet.create({
         width: 45,
         height: 42
     },
-    carteira: {
-        position: 'absolute',
+    centeredBlocoConteudo: {
+        position: 'relative',
+        top: -40,
+        right: 0,
+        left: 0,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    blocoConteudo: {
+        marginBottom: 35,
         padding: 10,
-        top: 140,
         height: 250,
-        width: 280,
+        width: vw(60),
+        minWidth: 280,
         backgroundColor: 'white',
         borderRadius: 15,
         shadowColor: "#000",
@@ -51,7 +62,7 @@ const estiloInicial = StyleSheet.create({
         },
         shadowOpacity: 0.39,
         shadowRadius: 8.30,
-        elevation: 13,
+        elevation: 13
     },
     textTitle: {
         fontSize: 20,
@@ -100,31 +111,30 @@ const estiloInicial = StyleSheet.create({
         flexDirection: 'row-reverse',
         alignItems: 'flex-end'
     },
+    positionAdicionar: {
+        position: 'absolute',
+        bottom: 20,
+        right: 20
+    },
     botaoVerMais: {
+        justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 2,
         borderRadius: 15,
         borderColor: '#FF781F',
-        paddingTop: 2,
-        paddingRight: 5,
-        paddingBottom: 2,
         paddingLeft: 5,
-        width: 70
+        width: 78,
+        height: 30
     },
     textVerMais: {
-        color: '#FF781F'
-    },
-    postitionAdicionar: {
-        alignItems: 'center'
+        right: 0,
+        left: -2,
+        color: '#FF781F',
+        fontWeight: '600'
     },
     botaoAdicionar: {
-        position: 'absolute',
-        left: 90,
-        top: 240,
-
         width: 50,
         height: 50
     }
-
 });
 export default estiloInicial;
