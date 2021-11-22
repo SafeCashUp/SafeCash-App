@@ -8,7 +8,7 @@ export default function App() {
   return (
     <NavigationContainer>
             
-      <StatusBar barStyle="light-content" backgroundColor="#081a31"/>
+      <StatusBar barStyle="light-content" backgroundColor="#FF8000"/>
 
       <RotasStack/>
 
