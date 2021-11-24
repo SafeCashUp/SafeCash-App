@@ -5,6 +5,34 @@ const estiloInicial = StyleSheet.create({
     container: {
         flex: 1
     },
+    centeredModal: {
+        top: 0,
+        right: 0,
+        left: 0,
+        bottom: 0,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    containerModal: {
+        padding: 10,
+        backgroundColor: 'white',
+        width: 300,
+        height: 400,
+        borderRadius: 20,
+        shadowColor: "#000",
+        shadowOffset: {
+	        width: 0,
+	        height: 6,
+        },
+        shadowOpacity: 0.39,
+        shadowRadius: 8.30,
+        elevation: 13
+    },
+    positionFecharModal: {
+        position: 'absolute',
+        right: 5,
+        top: 5
+    },
     containerScrollView: {
         flex: 1,
         flexDirection: 'column',
@@ -128,7 +156,7 @@ const estiloInicial = StyleSheet.create({
     },
     textVerMais: {
         right: 0,
-        left: -2,
+        left: -3,
         color: '#FF781F',
         fontWeight: '600'
     },

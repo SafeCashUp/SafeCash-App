@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Image, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Image, Text, TextInput, Pressable } from 'react-native';
 
 import estiloQuestion from './estiloQuestion';
 
@@ -19,9 +19,9 @@ export default function Question({ navigation }) {
                 underlineColorAndroid="transparent"
             />
 
-            <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.navigate('Inicial')}>
+            <Pressable activeOpacity={0.5} onPress={() => navigation.navigate('Inicial')}>
                 <Image style={estiloQuestion.imgSeta} source={require('../../../assets/buttonSet.png')}/>
-            </TouchableOpacity>
+            </Pressable>
         </View>
     );
 }

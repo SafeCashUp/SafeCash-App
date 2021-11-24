@@ -7,7 +7,7 @@ const Drawer = createDrawerNavigator();
 
 const RotasDrawer = () => {
     return (
-        <Drawer.Navigator initialRouteName="Inicial">
+        <Drawer.Navigator initialRouteName="InicialIn">
           <Drawer.Screen
               name="InicialIn"
               component={Inicial}

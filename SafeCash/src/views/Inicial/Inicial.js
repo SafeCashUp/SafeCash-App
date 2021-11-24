@@ -1,21 +1,38 @@
-import React from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, Image, Pressable, ScrollView } from 'react-native';
+import Modal from 'react-native-modal';
 import estiloInicial from './estiloInicial';
 
+import { AntDesign } from '@expo/vector-icons';
+
 export default function() {
+    const [modalVisible, setModalVisible] = useState(false);
     return (
-        
         <View style={estiloInicial.container}>
+
+            <Modal isVisible={modalVisible}>
+                <View style={estiloInicial.centeredModal}>
+                    <View style={estiloInicial.containerModal}>
+                        <Text>Testando a Modal!</Text>
+                        <View style={estiloInicial.positionFecharModal}>
+                            <Pressable onPress={() => {setModalVisible(false)}} activeOpacity={0.5}>
+                                <AntDesign name="close" size={24} color="gray" />
+                            </Pressable>
+                        </View>
+                    </View>
+                </View>
+            </Modal>
+
             <ScrollView style={estiloInicial.containerScrollView}>
                 <View style={estiloInicial.header}>
                     <View style={estiloInicial.cabecalho}>
                         <View style={estiloInicial.logoHello}>
-                            <Image source={require('../../../assets/logo.png')} style={estiloInicial.logoHeader}/>
+                            <Image source={require('../../../assets/logo.png')} style={estiloInicial.logoHeader} />
                             <Text style={estiloInicial.Hello}>Olá {"\n"}Vitudomingues</Text>
                         </View>
-                        <TouchableOpacity activeOpacity={0.5}>
-                            <Image style={estiloInicial.visible} source={require('../../../assets/visibility.png')}/>
-                        </TouchableOpacity>
+                        <Pressable activeOpacity={0.5}>
+                            <Image style={estiloInicial.visible} source={require('../../../assets/visibility.png')} />
+                        </Pressable>
                     </View>
                 </View>
                 <View style={estiloInicial.centeredBlocoConteudo}>
@@ -42,9 +59,9 @@ export default function() {
                         <View style={estiloInicial.linha} />
 
                         <View style={estiloInicial.positionButton}>
-                            <TouchableOpacity style={estiloInicial.botaoVerMais} activeOpacity={0.5}>
+                            <Pressable style={estiloInicial.botaoVerMais} activeOpacity={0.5}>
                                 <Text style={estiloInicial.textVerMais}>Ver Mais</Text>
-                            </TouchableOpacity>
+                            </Pressable>
                         </View>
                     </View>
                     <View style={estiloInicial.blocoConteudo}>
@@ -54,9 +71,9 @@ export default function() {
             </ScrollView>
 
             <View style={estiloInicial.positionAdicionar}>
-                <TouchableOpacity activeOpacity={0.5}>
+                <Pressable onPress={() => {setModalVisible(true)}} activeOpacity={0.5}>
                     <Image style={estiloInicial.botaoAdicionar} source={require('../../../assets/add.png')} />
-                </TouchableOpacity>
+                </Pressable>
             </View>
         </View>
     );
