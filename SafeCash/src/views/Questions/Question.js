@@ -19,7 +19,7 @@ export default function Question({ navigation }) {
                 underlineColorAndroid="transparent"
             />
 
-            <Pressable activeOpacity={0.5} onPress={() => navigation.navigate('Inicial')}>
+            <Pressable onPress={() => navigation.navigate('Inicial')}>
                 <Image style={estiloQuestion.imgSeta} source={require('../../../assets/buttonSet.png')}/>
             </Pressable>
         </View>

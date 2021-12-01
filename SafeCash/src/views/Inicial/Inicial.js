@@ -15,7 +15,7 @@ export default function() {
                     <View style={estiloInicial.containerModal}>
                         <Text>Testando a Modal!</Text>
                         <View style={estiloInicial.positionFecharModal}>
-                            <Pressable onPress={() => {setModalVisible(false)}} activeOpacity={0.5}>
+                            <Pressable onPress={() => {setModalVisible(false)}}>
                                 <AntDesign name="close" size={24} color="gray" />
                             </Pressable>
                         </View>
@@ -30,7 +30,7 @@ export default function() {
                             <Image source={require('../../../assets/logo.png')} style={estiloInicial.logoHeader} />
                             <Text style={estiloInicial.Hello}>Olá {"\n"}Vitudomingues</Text>
                         </View>
-                        <Pressable activeOpacity={0.5}>
+                        <Pressable>
                             <Image style={estiloInicial.visible} source={require('../../../assets/visibility.png')} />
                         </Pressable>
                     </View>
@@ -59,7 +59,7 @@ export default function() {
                         <View style={estiloInicial.linha} />
 
                         <View style={estiloInicial.positionButton}>
-                            <Pressable style={estiloInicial.botaoVerMais} activeOpacity={0.5}>
+                            <Pressable style={estiloInicial.botaoVerMais}>
                                 <Text style={estiloInicial.textVerMais}>Ver Mais</Text>
                             </Pressable>
                         </View>
@@ -71,7 +71,7 @@ export default function() {
             </ScrollView>
 
             <View style={estiloInicial.positionAdicionar}>
-                <Pressable onPress={() => {setModalVisible(true)}} activeOpacity={0.5}>
+                <Pressable onPress={() => {setModalVisible(true)}}>
                     <Image style={estiloInicial.botaoAdicionar} source={require('../../../assets/add.png')} />
                 </Pressable>
             </View>
