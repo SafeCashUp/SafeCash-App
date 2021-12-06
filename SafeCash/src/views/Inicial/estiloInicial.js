@@ -63,6 +63,46 @@ const estiloInicial = StyleSheet.create({
         color: '#FF781F',
         fontWeight: 'bold'
     },
+    centeredInput: {
+        padding: 30,
+        marginTop: 25,
+        width: '100%',
+        height: '100%'
+    },
+    textoInput: {
+        fontSize: 15,
+        color: '#151515',
+        fontWeight: 'bold'
+    },
+    inputs: {
+        marginBottom: 15,
+        marginTop: 10,
+        borderColor: 'gainsboro',
+        height: 20,
+        paddingLeft: 5,
+        paddingRight: 5,
+        paddingBottom: 3,
+        borderBottomWidth: 1,
+    },
+    botaoInput: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 2,
+        right: 65,
+        left: 65,
+        marginTop: 105,
+        width: 85,
+        height: 35,
+        backgroundColor: '#FF871F'
+    },
+    positionButtomObj: {
+        bottom: 65
+    },
+    textoBotaoInput: {
+        fontSize: 13,
+        color: 'gainsboro',
+        fontWeight: 'bold'
+    },
     containerScrollView: {
         flex: 1,
         flexDirection: 'column',

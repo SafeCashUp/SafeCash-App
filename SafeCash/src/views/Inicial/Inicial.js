@@ -23,6 +23,7 @@ export default function() {
 
     // Controle de objetivo
     const [nomeObjetivo, setNomeObjetivo] = useState("");
+    const [valorObjetivo, setValorObjetivo] = useState("");
 
     return (
         <View style={estiloInicial.container}>
@@ -64,6 +65,21 @@ export default function() {
                         </View>
                         <View style={estiloInicial.conteudoModal}>
                             <Text style={estiloInicial.tituloModal}>Adicionar Gasto</Text>
+                            <View style={estiloInicial.centeredInput}>
+                                <Text style={estiloInicial.textoInput}>Inserir Valor R$ :</Text>
+                                <TextInput
+                                    spellCheck={false}
+                                    keyboardType='numeric'
+                                    style={estiloInicial.inputs}
+                                    value={gasto}
+                                    onChangeText={text=>setGasto(text)}
+                                    placeholder="Digite aqui..."
+                                    underlineColorAndroid="transparent"
+                                />
+                                <TouchableOpacity style={estiloInicial.botaoInput} activeOpacity={0.5}>
+                                    <Text style={estiloInicial.textoBotaoInput}>ADICIONAR</Text>
+                                </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </View>
@@ -106,6 +122,21 @@ export default function() {
                         </View>
                         <View style={estiloInicial.conteudoModal}>
                             <Text style={estiloInicial.tituloModal}>Adicionar Receita</Text>
+                            <View style={estiloInicial.centeredInput}>
+                                <Text style={estiloInicial.textoInput}>Inserir Valor R$ :</Text>
+                                <TextInput
+                                    spellCheck={false}
+                                    keyboardType='numeric'
+                                    style={estiloInicial.inputs}
+                                    value={receita}
+                                    onChangeText={text=>setReceita(text)}
+                                    placeholder="Digite aqui..."
+                                    underlineColorAndroid="transparent"
+                                />
+                                <TouchableOpacity style={estiloInicial.botaoInput} activeOpacity={0.5}>
+                                    <Text style={estiloInicial.textoBotaoInput}>ADICIONAR</Text>
+                                </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </View>
@@ -148,6 +179,21 @@ export default function() {
                         </View>
                         <View style={estiloInicial.conteudoModal}>
                             <Text style={estiloInicial.tituloModal}>Adicionar Despesa</Text>
+                            <View style={estiloInicial.centeredInput}>
+                                <Text style={estiloInicial.textoInput}>Inserir Valor R$ :</Text>
+                                <TextInput
+                                    spellCheck={false}
+                                    keyboardType='numeric'
+                                    style={estiloInicial.inputs}
+                                    value={despesa}
+                                    onChangeText={text=>setDespesa(text)}
+                                    placeholder="Digite aqui..."
+                                    underlineColorAndroid="transparent"
+                                />
+                                <TouchableOpacity style={estiloInicial.botaoInput} activeOpacity={0.5}>
+                                    <Text style={estiloInicial.textoBotaoInput}>ADICIONAR</Text>
+                                </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </View>
@@ -190,6 +236,35 @@ export default function() {
                         </View>
                         <View style={estiloInicial.conteudoModal}>
                             <Text style={estiloInicial.tituloModal}>Adicionar Objetivo</Text>
+                            <View style={estiloInicial.centeredInput}>
+                                {/* INPUT NOME */}
+                                <Text style={estiloInicial.textoInput}>Inserir Nome :</Text>
+                                <TextInput
+                                    spellCheck={false}
+                                    style={estiloInicial.inputs}
+                                    value={nomeObjetivo}
+                                    onChangeText={text=>setNomeObjetivo(text)}
+                                    placeholder="Digite aqui..."
+                                    underlineColorAndroid="transparent"
+                                />
+
+                                {/* INPUT VALOR */}
+                                <Text style={estiloInicial.textoInput}>Inserir Valor R$ :</Text>
+                                <TextInput
+                                    spellCheck={false}
+                                    keyboardType='numeric'
+                                    style={estiloInicial.inputs}
+                                    value={valorObjetivo}
+                                    onChangeText={text=>setValorObjetivo(text)}
+                                    placeholder="Digite aqui..."
+                                    underlineColorAndroid="transparent"
+                                />
+                                <View style={estiloInicial.positionButtomObj}>
+                                    <TouchableOpacity style={estiloInicial.botaoInput} activeOpacity={0.5}>
+                                        <Text style={estiloInicial.textoBotaoInput}>ADICIONAR</Text>
+                                    </TouchableOpacity>
+                                </View>
+                            </View>
                         </View>
                     </View>
                 </View>
