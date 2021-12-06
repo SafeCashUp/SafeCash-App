@@ -39,14 +39,21 @@ const estiloSobre = StyleSheet.create({
         marginBottom: 20,
         textAlign: 'justify'
     },
+    centeredFotos: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+    },
     containerFotos: {
         alignItems: 'center'
     },
     sombra: {
+        
         marginBottom: 10,
-        width: 280,
-        height: 280,
-        borderRadius: 280 / 2,
+        width: 60,
+        height: 60,
+        borderRadius: 60 / 2,
         shadowColor: "#000",
         shadowOffset: {
 	        width: 3,
@@ -58,9 +65,9 @@ const estiloSobre = StyleSheet.create({
         elevation: 13
     },
     imageFoto: {
-        width: 280,
-        height: 280,
-        borderRadius: 280 / 2
+        width: 60,
+        height: 60,
+        borderRadius: 60 / 2
     },
     nome: {
         fontSize: 20,
@@ -73,7 +80,7 @@ const estiloSobre = StyleSheet.create({
         marginBottom: 50,
         height: 2,
         backgroundColor: '#FF781F',
-        width: 180
+        width: '100%'
     },
     footer: {
         justifyContent: 'flex-end',

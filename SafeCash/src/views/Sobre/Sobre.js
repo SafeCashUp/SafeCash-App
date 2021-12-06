@@ -23,40 +23,54 @@ export default function() {
 
                 <View style={estiloSobre.containerFotos}>
 
-                    <View style={estiloSobre.sombra}>
-                    <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata4.png')} />
+                    <View style={estiloSobre.centeredFotos}>
+                        <View style={estiloSobre.sombra}>
+                        <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata4.png')} />
+                        </View>
+                        <Text style={estiloSobre.nome}>Vítor Pessoa</Text>
                     </View>
-                    <Text style={estiloSobre.nome}>Vítor Pessoa</Text>
                     <View style={estiloSobre.linhaNome} />
 
-                    <View style={estiloSobre.sombra}>
-                    <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata3.png')} />
+                    <View style={estiloSobre.centeredFotos}>
+                        <View style={estiloSobre.sombra}>
+                        <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata3.png')} />
+                        </View>
+                        <Text style={estiloSobre.nome}>Vinicius da Silva</Text>
                     </View>
-                    <Text style={estiloSobre.nome}>Vinicius da Silva</Text>
                     <View style={estiloSobre.linhaNome} />
 
-                    <View style={estiloSobre.sombra}>
-                    <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata1.png')} />
+                    <View style={estiloSobre.centeredFotos}>
+                        <View style={estiloSobre.sombra}>
+                        <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata1.png')} />
+                        </View>
+                        <Text style={estiloSobre.nome}>Lucas Rodrigo</Text>
                     </View>
-                    <Text style={estiloSobre.nome}>Lucas Rodrigo</Text>
-                    <View style={estiloSobre.linhaNome} />
-
-                    <View style={estiloSobre.sombra}>
-                    <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata5.png')} />
-                    </View>
-                    <Text style={estiloSobre.nome}>Pablo Henrique</Text>
                     <View style={estiloSobre.linhaNome} />
                     
-                    <View style={estiloSobre.sombra}>
-                    <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata6.png')} />
+                    <View style={estiloSobre.centeredFotos}>
+                        <View style={estiloSobre.sombra}>
+                        <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata5.png')} />
+                        </View>
+                        <Text style={estiloSobre.nome}>Pablo Henrique</Text>
                     </View>
-                    <Text style={estiloSobre.nome}>Micael Cassiano</Text>
+                    <View style={estiloSobre.linhaNome} />
+                    
+                    <View style={estiloSobre.centeredFotos}>
+                        <View style={estiloSobre.sombra}>
+                        <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata6.png')} />
+                        </View>
+                        <View>
+                        <Text style={estiloSobre.nome}>Micael Cassiano</Text>
+                        </View>
+                    </View>
                     <View style={estiloSobre.linhaNome} />
 
-                    <View style={estiloSobre.sombra}>
-                    <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata2.png')} />
+                    <View style={estiloSobre.centeredFotos}>
+                        <View style={estiloSobre.sombra}>
+                        <Image style={estiloSobre.imageFoto} source={require('../../../assets/fotos/primata2.png')} />
+                        </View>
+                        <Text style={estiloSobre.nome}>Elbert Lucas</Text>
                     </View>
-                    <Text style={estiloSobre.nome}>Elbert Lucas</Text>
                     <View style={estiloSobre.linhaNome} />
                 </View>
             </View>

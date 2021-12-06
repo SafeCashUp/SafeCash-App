@@ -14,9 +14,8 @@ const estiloInicial = StyleSheet.create({
         alignItems: 'center'
     },
     containerModal: {
-        padding: 10,
         backgroundColor: 'white',
-        width: 300,
+        width: 310,
         height: 400,
         borderRadius: 20,
         shadowColor: "#000",
@@ -28,10 +27,41 @@ const estiloInicial = StyleSheet.create({
         shadowRadius: 8.30,
         elevation: 13
     },
+    menuModal: {
+        flexDirection: 'row',
+        width: '100%',
+        height: 30,
+        backgroundColor: '#151515',
+        borderTopWidth: 1,
+        borderColor: '#151515'
+        
+    },
+    itensMenu: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: 70,
+        height: 30,
+        padding: 2
+    },
+    textoMenu: {
+        color: 'gainsboro',
+        fontSize: 13,
+        fontWeight: 'bold'
+    },
     positionFecharModal: {
         position: 'absolute',
-        right: 5,
-        top: 5
+        right: 3,
+        top: 3
+    },
+    conteudoModal: {
+        padding: 20,
+        alignItems: 'center',
+        flexDirection: 'column'
+    },
+    tituloModal: {
+        fontSize: 30,
+        color: '#FF781F',
+        fontWeight: 'bold'
     },
     containerScrollView: {
         flex: 1,
