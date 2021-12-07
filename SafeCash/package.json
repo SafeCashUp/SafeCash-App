@@ -17,6 +17,7 @@
     "expo-cli": "^4.13.0",
     "expo-font": "^10.0.3",
     "expo-status-bar": "^1.1.0",
+    "mysql2": "^2.3.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "0.64.3",
@@ -28,10 +29,17 @@
     "react-native-screens": "~3.8.0",
     "react-native-svg": "^12.1.1",
     "react-native-svg-transformer": "^0.14.3",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "sequelize": "^6.12.0-beta.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
   },
-  "private": true
+  "private": true,
+  "name": "safecash",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
