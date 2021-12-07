@@ -29,7 +29,7 @@ export default function() {
                         </View>
                         <Text style={estiloSobre.nome}>Vítor Pessoa</Text>
                     </View>
-                    <View style={estiloSobre.linhaNome} />
+                    <View style={estiloSobre.linha} />
 
                     <View style={estiloSobre.centeredFotos}>
                         <View style={estiloSobre.sombra}>
@@ -37,7 +37,7 @@ export default function() {
                         </View>
                         <Text style={estiloSobre.nome}>Vinicius da Silva</Text>
                     </View>
-                    <View style={estiloSobre.linhaNome} />
+                    <View style={estiloSobre.linha} />
 
                     <View style={estiloSobre.centeredFotos}>
                         <View style={estiloSobre.sombra}>
@@ -45,7 +45,7 @@ export default function() {
                         </View>
                         <Text style={estiloSobre.nome}>Lucas Rodrigo</Text>
                     </View>
-                    <View style={estiloSobre.linhaNome} />
+                    <View style={estiloSobre.linha} />
                     
                     <View style={estiloSobre.centeredFotos}>
                         <View style={estiloSobre.sombra}>
@@ -53,7 +53,7 @@ export default function() {
                         </View>
                         <Text style={estiloSobre.nome}>Pablo Henrique</Text>
                     </View>
-                    <View style={estiloSobre.linhaNome} />
+                    <View style={estiloSobre.linha} />
                     
                     <View style={estiloSobre.centeredFotos}>
                         <View style={estiloSobre.sombra}>
@@ -63,7 +63,7 @@ export default function() {
                         <Text style={estiloSobre.nome}>Micael Cassiano</Text>
                         </View>
                     </View>
-                    <View style={estiloSobre.linhaNome} />
+                    <View style={estiloSobre.linha} />
 
                     <View style={estiloSobre.centeredFotos}>
                         <View style={estiloSobre.sombra}>
@@ -71,7 +71,7 @@ export default function() {
                         </View>
                         <Text style={estiloSobre.nome}>Elbert Lucas</Text>
                     </View>
-                    <View style={estiloSobre.linhaNome} />
+                    <View style={estiloSobre.linha} />
                 </View>
             </View>
             <View style={estiloSobre.footer}>

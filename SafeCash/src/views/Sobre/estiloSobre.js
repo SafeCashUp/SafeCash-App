@@ -76,12 +76,6 @@ const estiloSobre = StyleSheet.create({
         textShadowColor: '#7F6E6E',
         textShadowRadius: 5
     },
-    linhaNome: {
-        marginBottom: 50,
-        height: 2,
-        backgroundColor: '#FF781F',
-        width: '100%'
-    },
     footer: {
         justifyContent: 'flex-end',
         width: '100%',

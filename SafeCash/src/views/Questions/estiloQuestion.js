@@ -1,12 +1,18 @@
 import { StyleSheet } from "react-native";
+import { vw, vh } from 'react-native-expo-viewport-units';
 
 const estiloQuestion = StyleSheet.create({
     container: {
-        height: '100%',
+        flex: 1
+    },
+    fundoApp: {
         backgroundColor: '#151515',
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        height: '100%',
+        width: '100%',
+        resizeMode: 'cover'
     },
     logotipo: {
       width: 150,

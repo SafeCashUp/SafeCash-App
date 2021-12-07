@@ -37,11 +37,11 @@ const estiloInicial = StyleSheet.create({
         
     },
     itensMenu: {
-        justifyContent: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
         alignItems: 'center',
         width: 70,
         height: 30,
-        padding: 2
     },
     textoMenu: {
         color: 'gainsboro',
