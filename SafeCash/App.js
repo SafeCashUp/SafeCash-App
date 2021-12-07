@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import RotasStack from './src/components/RotasStack';
 
 export default function App() {
+  const db = require('./models/db');
   return (
     <NavigationContainer>
             
