@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, ImageBackground, TextInput, TouchableOpacity } from 'react-native';
 
+import { View, Image, ImageBackground, TextInput, Pressable } from 'react-native';
 import estiloQuestion from './estiloQuestion';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -29,6 +29,15 @@ export default function Question({ navigation }) {
                 />
             </View>
             {/* SENHA */}
+            <TextInput
+                spellCheck={false}
+                style={estiloQuestion.inputs}
+                value={senha}
+                onChangeText={text=>setSenha(text)}
+                placeholder="Senha"
+                underlineColorAndroid="transparent"
+            />
+            <Pressable onPress={() => navigation.navigate('Inicial', {name:usuario})}>
             <View style={estiloQuestion.centeredInput}>
                 <TextInput
                     spellCheck={false}
