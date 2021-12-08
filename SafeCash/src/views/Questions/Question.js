@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
-import { View, Image, ImageBackground, TextInput, Pressable } from 'react-native';
+import { View, Image, ImageBackground, TextInput, Pressable, TouchableOpacity } from 'react-native';
 import estiloQuestion from './estiloQuestion';
 import { Ionicons } from '@expo/vector-icons';
-
 
 export default function Question({ navigation }) {
     
@@ -39,6 +38,7 @@ export default function Question({ navigation }) {
             />
             <Pressable onPress={() => navigation.navigate('Inicial', {name:usuario})}>
             <View style={estiloQuestion.centeredInput}>
+            
                 <TextInput
                     spellCheck={false}
                     style={estiloQuestion.inputs}
@@ -52,11 +52,14 @@ export default function Question({ navigation }) {
                     <Ionicons name="eye" size={24} color="gray" />
                 </TouchableOpacity>
             </View>
-        
+            </Pressable>
+
             <TouchableOpacity onPress={() => navigation.navigate('Inicial')} activeOpacity={0.5}>
                 <Image style={estiloQuestion.imgSeta} source={require('../../../assets/buttonSet.png')}/>
             </TouchableOpacity>
         </ImageBackground>
         </View>
+        
+        
     );
 }
