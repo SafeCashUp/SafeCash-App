@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { View, Image, ImageBackground, TextInput, Pressable } from 'react-native';
 
 import estiloQuestion from './estiloQuestion';
@@ -8,8 +9,10 @@ export default function Question({ navigation }) {
     const [usuario, setUsuario] = useState("");
     const [senha, setSenha] = useState("");
 
+    
     return(
         <View style={estiloQuestion.container}>
+            <StatusBar hidden={true} />
             <ImageBackground source={require('../../../assets/FundoApp.png')} style={estiloQuestion.fundoApp}>
             <Image source={require('../../../assets/Logotipo2.png')} style={estiloQuestion.logotipo}/>
             {/* NOME */}

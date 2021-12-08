@@ -17,7 +17,6 @@ const estiloInicial = StyleSheet.create({
         backgroundColor: 'white',
         width: 310,
         height: 400,
-        borderRadius: 20,
         shadowColor: "#000",
         shadowOffset: {
 	        width: 0,

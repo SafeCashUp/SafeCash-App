@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Image, Pressable, TouchableOpacity, ScrollView, TextInput } from 'react-native';
 import Modal from 'react-native-modal';
+import { StatusBar } from 'expo-status-bar';
 import estiloInicial from './estiloInicial';
 
 import { AntDesign } from '@expo/vector-icons';
@@ -11,6 +12,8 @@ export default function() {
     const [modalVisible2, setModalVisible2] = useState(false);
     const [modalVisible3, setModalVisible3] = useState(false);
     const [modalVisible4, setModalVisible4] = useState(false);
+
+    const [modalObjetivos, setModalObjetivos] = useState(false);
 
     // Controle do gasto
     const [gasto, setGasto] = useState("");
@@ -27,6 +30,14 @@ export default function() {
 
     return (
         <View style={estiloInicial.container}>
+            <StatusBar hidden={false} barStyle="light-content" backgroundColor="#FF8000"/>
+            {/* Modal Objetivos */}
+            <Modal isVisible={modalObjetivos}>
+                <View style={estiloInicial.centeredModal}>
+                    <View style={estiloInicial.containerModal}>
+                    </View>
+                </View>
+            </Modal>
 
             {/* Modal Gasto */}
             <Modal isVisible={modalVisible}>
@@ -306,8 +317,8 @@ export default function() {
                         <View style={estiloInicial.linha} />
 
                         <View style={estiloInicial.positionButton}>
-                            <Pressable style={estiloInicial.botaoVerMais}>
-                                <Text style={estiloInicial.textVerMais}>Ver Mais</Text>
+                            <Pressable style={estiloInicial.botaoVerMais} onPress={() => {setModalObjetivos(true)}}>
+                                <Text style={estiloInicial.textVerMais}>Objetivos</Text>
                             </Pressable>
                         </View>
                     </View>
@@ -318,9 +329,9 @@ export default function() {
             </ScrollView>
 
             <View style={estiloInicial.positionAdicionar}>
-                <Pressable onPress={() => {setModalVisible(true)}}>
+                <TouchableOpacity onPress={() => {setModalVisible(true)}} activeOpacity={0.5}>
                     <Image style={estiloInicial.botaoAdicionar} source={require('../../../assets/add.png')} />
-                </Pressable>
+                </TouchableOpacity>
             </View>
         </View>
     );
