@@ -24,28 +24,23 @@ const estiloCadastro = StyleSheet.create({
         fontSize: 17,
         marginTop: 10
     },
-    inputs: {
+    centeredInput: {
+        justifyContent: 'space-between',
+        flexDirection: 'row',
         borderWidth: 1,
         borderColor: '#FF781F',
         width: 235,
         height: 40,
         marginTop: 10,
-        paddingLeft: 5,
-        paddingRight: 5,
         borderRadius: 10,
         alignItems: 'center',
-        backgroundColor: 'white',
+        paddingLeft: 5,
+        paddingRight: 5,
+        backgroundColor: 'white'
+    },
+    inputs: {
         color: '#434343',
-        fontSize: 17,
-        shadowColor: "#000",
-        shadowOffset: {
-	        width: 0,
-	        height: 4,
-        },
-        shadowOpacity: 0.30,
-        shadowRadius: 4.65,
-
-        elevation: 8
+        fontSize: 17
     },
     imgSeta: {
         width: 55,
