@@ -35,6 +35,14 @@ export default function() {
             <Modal isVisible={modalObjetivos}>
                 <View style={estiloInicial.centeredModal}>
                     <View style={estiloInicial.containerModal}>
+                        <View style={estiloInicial.positionFecharModal}>
+                            <Pressable onPress={() => {setModalObjetivos(false)}}>
+                                <AntDesign name="close" size={24} color="gray" />
+                            </Pressable>
+                        </View>
+                        <View style={estiloInicial.conteudoModal}>
+                            <Text style={estiloInicial.tituloModal}>Objetivos</Text>
+                        </View>
                     </View>
                 </View>
             </Modal>
