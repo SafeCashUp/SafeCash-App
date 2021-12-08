@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, ImageBackground, TextInput, Pressable } from 'react-native';
-
 import estiloQuestion from './estiloQuestion';
 
 export default function Question({ navigation }) {
@@ -33,8 +32,7 @@ export default function Question({ navigation }) {
                 placeholder="Senha"
                 underlineColorAndroid="transparent"
             />
-        
-            <Pressable onPress={() => navigation.navigate('Inicial')}>
+            <Pressable onPress={() => navigation.navigate('Inicial', {name:usuario})}>
                 <Image style={estiloQuestion.imgSeta} source={require('../../../assets/buttonSet.png')}/>
             </Pressable>
         </ImageBackground>

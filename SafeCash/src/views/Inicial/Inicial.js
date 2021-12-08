@@ -3,10 +3,12 @@ import { View, Text, Image, Pressable, TouchableOpacity, ScrollView, TextInput }
 import Modal from 'react-native-modal';
 import { StatusBar } from 'expo-status-bar';
 import estiloInicial from './estiloInicial';
-
+import Grafico from '../../components/Grafico';
 import { AntDesign } from '@expo/vector-icons';
 
-export default function() {
+
+export default function Inicial( { route, navigation } ) {
+
     // Controle da visibilidade das modais
     const [modalVisible, setModalVisible] = useState(false);
     const [modalVisible2, setModalVisible2] = useState(false);
@@ -294,7 +296,7 @@ export default function() {
                     <View style={estiloInicial.cabecalho}>
                         <View style={estiloInicial.logoHello}>
                             <Image source={require('../../../assets/logo.png')} style={estiloInicial.logoHeader} />
-                            <Text style={estiloInicial.Hello}>Olá {"\n"}Vitudomingues</Text>
+                            <Text style={estiloInicial.Hello}>Olá {"\n"}</Text>
                         </View>
                         <Pressable>
                             <Image style={estiloInicial.visible} source={require('../../../assets/visibility.png')} />
@@ -331,7 +333,7 @@ export default function() {
                         </View>
                     </View>
                     <View style={estiloInicial.blocoConteudo}>
-
+                        <Grafico/>
                     </View>
                 </View>
             </ScrollView>
