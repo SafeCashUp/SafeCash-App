@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
+<<<<<<< HEAD:SafeCash/src/views/Login/Login.js
 import { View, Image, ImageBackground, TextInput, TouchableOpacity } from 'react-native';
 import estiloLogin from './estiloLogin';
+=======
+import { View, Image, ImageBackground, TextInput, Pressable, TouchableOpacity } from 'react-native';
+import estiloQuestion from './estiloQuestion';
+>>>>>>> 1d3fbd13e343643ac58f21848cb17f1ab1c5cd32:SafeCash/src/views/Questions/Question.js
 import { Ionicons } from '@expo/vector-icons';
-
 
 export default function Question({ navigation }) {
     
@@ -29,7 +33,21 @@ export default function Question({ navigation }) {
                 />
             </View>
             {/* SENHA */}
+<<<<<<< HEAD:SafeCash/src/views/Login/Login.js
             <View style={estiloLogin.centeredInput}>
+=======
+            <TextInput
+                spellCheck={false}
+                style={estiloQuestion.inputs}
+                value={senha}
+                onChangeText={text=>setSenha(text)}
+                placeholder="Senha"
+                underlineColorAndroid="transparent"
+            />
+            <Pressable onPress={() => navigation.navigate('Inicial', {name:usuario})}>
+            <View style={estiloQuestion.centeredInput}>
+            
+>>>>>>> 1d3fbd13e343643ac58f21848cb17f1ab1c5cd32:SafeCash/src/views/Questions/Question.js
                 <TextInput
                     spellCheck={false}
                     style={estiloLogin.inputs}
@@ -43,10 +61,19 @@ export default function Question({ navigation }) {
                     <Ionicons name="eye" size={24} color="gray" />  
                 </TouchableOpacity>
             </View>
+<<<<<<< HEAD:SafeCash/src/views/Login/Login.js
             <TouchableOpacity onPress={() => navigation.navigate('Inicial', {name:usuario})} activeOpacity={0.5}>
                 <Image style={estiloLogin.imgSeta} source={require('../../../assets/buttonSet.png')}/>
+=======
+            </Pressable>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Inicial')} activeOpacity={0.5}>
+                <Image style={estiloQuestion.imgSeta} source={require('../../../assets/buttonSet.png')}/>
+>>>>>>> 1d3fbd13e343643ac58f21848cb17f1ab1c5cd32:SafeCash/src/views/Questions/Question.js
             </TouchableOpacity>
         </ImageBackground>
         </View>
+        
+        
     );
 }
