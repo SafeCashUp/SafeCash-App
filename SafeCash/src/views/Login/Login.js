@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
-import { View, Image, ImageBackground, TextInput, Pressable } from 'react-native';
-import estiloQuestion from './estiloQuestion';
+import { View, Image, ImageBackground, TextInput, TouchableOpacity } from 'react-native';
+import estiloLogin from './estiloLogin';
 import { Ionicons } from '@expo/vector-icons';
 
 
@@ -13,15 +13,15 @@ export default function Question({ navigation }) {
     const [hidePass, setHidePass] = useState(true);
     
     return(
-        <View style={estiloQuestion.container}>
+        <View style={estiloLogin.container}>
             <StatusBar hidden={true} />
-            <ImageBackground source={require('../../../assets/FundoApp.png')} style={estiloQuestion.fundoApp}>
-            <Image source={require('../../../assets/Logotipo2.png')} style={estiloQuestion.logotipo}/>
+            <ImageBackground source={require('../../../assets/FundoApp.png')} style={estiloLogin.fundoApp}>
+            <Image source={require('../../../assets/Logotipo2.png')} style={estiloLogin.logotipo}/>
             {/* NOME */}
-            <View style={estiloQuestion.centeredInput}>
+            <View style={estiloLogin.centeredInput}>
                 <TextInput
                     spellCheck={false}
-                    style={estiloQuestion.inputs}
+                    style={estiloLogin.inputs}
                     value={usuario}
                     onChangeText={text=>setUsuario(text)}
                     placeholder="Usuário"
@@ -29,19 +29,10 @@ export default function Question({ navigation }) {
                 />
             </View>
             {/* SENHA */}
-            <TextInput
-                spellCheck={false}
-                style={estiloQuestion.inputs}
-                value={senha}
-                onChangeText={text=>setSenha(text)}
-                placeholder="Senha"
-                underlineColorAndroid="transparent"
-            />
-            <Pressable onPress={() => navigation.navigate('Inicial', {name:usuario})}>
-            <View style={estiloQuestion.centeredInput}>
+            <View style={estiloLogin.centeredInput}>
                 <TextInput
                     spellCheck={false}
-                    style={estiloQuestion.inputs}
+                    style={estiloLogin.inputs}
                     value={senha}
                     onChangeText={text=>setSenha(text)}
                     placeholder="Senha"
@@ -49,12 +40,11 @@ export default function Question({ navigation }) {
                     secureTextEntry={hidePass}
                 />
                 <TouchableOpacity onPress={() => {setHidePass(!hidePass)}} activeOpacity={0.5}>
-                    <Ionicons name="eye" size={24} color="gray" />
+                    <Ionicons name="eye" size={24} color="gray" />  
                 </TouchableOpacity>
             </View>
-        
-            <TouchableOpacity onPress={() => navigation.navigate('Inicial')} activeOpacity={0.5}>
-                <Image style={estiloQuestion.imgSeta} source={require('../../../assets/buttonSet.png')}/>
+            <TouchableOpacity onPress={() => navigation.navigate('Inicial', {name:usuario})} activeOpacity={0.5}>
+                <Image style={estiloLogin.imgSeta} source={require('../../../assets/buttonSet.png')}/>
             </TouchableOpacity>
         </ImageBackground>
         </View>

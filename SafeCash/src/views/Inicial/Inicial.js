@@ -296,7 +296,7 @@ export default function Inicial( { route, navigation } ) {
                     <View style={estiloInicial.cabecalho}>
                         <View style={estiloInicial.logoHello}>
                             <Image source={require('../../../assets/logo.png')} style={estiloInicial.logoHeader} />
-                            <Text style={estiloInicial.Hello}>Olá {"\n"}</Text>
+                            <Text style={estiloInicial.Hello}>Olá {"\n"}{route.params?.name}</Text>
                         </View>
                         <Pressable>
                             <Image style={estiloInicial.visible} source={require('../../../assets/visibility.png')} />

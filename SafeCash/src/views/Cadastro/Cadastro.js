@@ -60,7 +60,7 @@ export default function Cadastro({ navigation }) {
                     <Ionicons name="eye" size={24} color="gray" />
                 </TouchableOpacity>
             </View>
-            <TouchableOpacity onPress={() => navigation.navigate('Question')} activeOpacity={0.5}>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')} activeOpacity={0.5}>
                 <Image style={estiloCadastro.imgSeta} source={require('../../../assets/buttonSet.png')}/>
             </TouchableOpacity>
         </ImageBackground>

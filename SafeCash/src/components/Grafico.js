@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
-import { View, Text, Image, Pressable, ScrollView } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import { Dimensions } from "react-native";
-const screenWidth = Dimensions.get("window").width;
-import {
-    LineChart,
-    BarChart,
-    PieChart,
-    ProgressChart,
-    ContributionGraph,
-    StackedBarChart
-  } from "react-native-chart-kit";
+import { LineChart } from "react-native-chart-kit";
 
+  const screenWidth = Dimensions.get("window").width;
   const Grafico = () => {
     return (
   <View>
@@ -36,14 +29,14 @@ import {
     yAxisSuffix="k"
     yAxisInterval={1} // optional, defaults to 1
     chartConfig={{
-      backgroundColor: "#f55911",
-      backgroundGradientFrom: "#f56025",
-      backgroundGradientTo: "#db361d",
+      backgroundColor: "#FF781F",
+      backgroundGradientFrom:"#363636",
+      backgroundGradientTo: "#363636",
       decimalPlaces: 2, // optional, defaults to 2dp
       color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
       labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
       style: {
-        borderRadius: 16
+        borderRadius: 10
       },
       propsForDots: {
         r: "6",
@@ -54,7 +47,7 @@ import {
     bezier
     style={{
       marginVertical: 8,
-      borderRadius: 16
+      borderRadius: 10
     }}
   />
 </View>

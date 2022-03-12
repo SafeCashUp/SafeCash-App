@@ -1,7 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Cadastro from '../views/Cadastro/Cadastro';
-import Question from '../views/Questions/Question';
+import Login from '../views/Login/Login';
 import RotasDrawer from './RotasDrawer';
 
 const Stack = createNativeStackNavigator();
@@ -15,8 +15,8 @@ const RotasStack = () => {
                     options={ { headerShown: false } }
                 />
                 <Stack.Screen
-                    name="Question"
-                    component={Question}
+                    name="Login"
+                    component={Login}
                     options={ { headerShown: false } }
                 />
                 <Stack.Screen
